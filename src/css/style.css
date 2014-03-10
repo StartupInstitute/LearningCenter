@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* end reset */
+body {
+  font-size: 1.25em;
+  font-family: Helvetica, sans-serif;
+  text-transform: none;
+  color: #444444;
+  /*background-color:#F8F8F8;
+  background-image:url('../../images/cream_dust.png');*/ }
+  body p {
+    line-height: 1.5em; }
+  body ul {
+    margin-bottom: 1em;
+    padding-left: 1.1em;
+    list-style-type: square;
+    color: #888888; }
+  body li {
+    padding-left: .5em;
+    text-align: left; }
+    body li h3 {
+      margin-left: 0; }
+  body .large {
+    color: red; }
+  body .callout {
+    color: #888888; }
+  body em {
+    color: #888888;
+    font-style: normal; }
+  body h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #888888;
+    font-size: 3em;
+    letter-spacing: -0.02em;
+    word-spacing: .1em; }
+  body h2 {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #888888;
+    border: none;
+    letter-spacing: -0.02em;
+    word-spacing: .13em;
+    margin-left: -0.1em; }
+  body h3 {
+    font-size: 1.25em;
+    font-weight: normal;
+    padding-top: .75em;
+    line-height: 1.5em; }
+  body h4 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #888888;
+    border: none;
+    letter-spacing: -0.02em;
+    word-spacing: .1em;
+    padding: 0; }
+  body a {
+    color: #3ba4db;
+    text-decoration: none; }
+    body a:hover, body a:focus {
+      color: #888888; }
+  body strong {
+    font-weight: normal;
+    color: #888888; }
+  body nav {
+    float: left;
+    width: 100%; }
+    body nav ul {
+      margin-top: 2em;
+      padding: 5px;
+      display: block;
+      width: 100%; }
+      body nav ul li {
+        float: left;
+        list-style: none;
+        padding: 0 1em;
+        text-transform: lowercase; }
+        body nav ul li a {
+          color: #444444; }
+        body nav ul li h1 {
+          margin-top: -0.55em;
+          font-size: 2.5em;
+          color: white; }
+  body #syllabus {
+    float: right;
+    padding: .1em 2em 0em 0em; }
+    body #syllabus a {
+      color: #888888;
+      float: right;
+      text-transform: uppercase;
+      font-size: .75em;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      right: 0; }
+  body header {
+    top: 0;
+    height: 4.5em;
+    background-image: url("../../images/subtle_surface.png");
+    /*background-color:$gray-color;*/
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 5px #666; }
+  body footer {
+    height: 4.5em;
+    background-image: url("../../images/subtle_surface.png");
+    /*background-color:$gray-color;*/
+    width: 100%; }
+    body footer p {
+      color: #aaa;
+      float: right;
+      font-size: .8em;
+      padding: 4em 2em 0 0; }
+  body section {
+    padding: 6em 6em 6em 6em; }
+  body #material {
+    background-color: #F8F8F8; }
+  body #follow {
+    background-image: url("../../images/subtle_dots.png"); }
+  body #resources {
+    background-color: #F8F8F8; }
+  body #help {
+    background-color: #fff; }
