@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end reset */
+
+$main-color:#444;
+$callout-color:#888;
+$link-color:#3BA4DB;
+$gray-color:#DDD;
+
+@mixin sans-font {
+	font-family: 'Lato', sans-serif; font-weight:300;	
+	
+} 
+
+@mixin sans-bold-font {
+	font-style: normal;
+	font-family: 'Lato', sans-serif; font-weight:900;	
+		
+}
+
+@mixin serif-font {
+	font-family: Helvetica, sans-serif;  
+	text-transform:none;
+}
+
+
+
+
+
+body {
+	font-size:1.25em;
+	@include serif-font;
+	color:$main-color;
+	/*background-color:#F8F8F8;
+	background-image:url('../../images/cream_dust.png');*/
+
+
+	p {	line-height:1.5em;}
+	
+
+	ul {
+		margin-bottom:1em; padding-left:1.1em;  list-style-type: square; color:$callout-color; }
+		li { padding-left:.5em; text-align:left;
+			h3 {margin-left:0;}
+	}
+
+
+
+	.large { color:red;}
+	.callout {color:$callout-color;}
+	em { color:$callout-color; font-style:normal;}
+	
+	
+	h1 {
+		@include sans-font;
+		line-height: 1em;
+		text-transform:uppercase;	
+		color:$callout-color;
+		font-size:3em;	
+		letter-spacing:-.02em; word-spacing:.1em;
+
+	}
+
+
+	h2 {
+		font-size:3em;
+		line-height:1.2em;
+		@include sans-font;
+		color:$callout-color;
+		border:none;
+		letter-spacing:-.02em; word-spacing:.13em;
+		margin-left:-.1em;
+	
+	}
+
+	h3 {
+		font-size:1.25em;
+		font-weight:normal;
+		padding-top:.75em;
+		line-height:1.5em;
+	}
+	
+	h4 {
+		font-size:2em;
+		line-height:1.2em;
+		@include sans-font;
+		color:$callout-color;
+		border:none;
+		letter-spacing:-.02em; word-spacing:.1em;
+		padding:0;
+	}
+
+
+	
+	a {
+		
+			color:$link-color;
+			text-decoration:none;
+		
+		
+		&:hover, &:focus {
+			color:$callout-color;
+		}
+	}
+	
+	strong { 
+		font-weight:normal;
+		color:$callout-color;
+	}
+	
+	nav {
+		float:left;
+		width:100%;
+		ul {
+			margin-top:2em;
+			padding:5px;
+			display:block;
+			width:100%;
+			li {float:left; list-style:none; padding:0 1em; text-transform:lowercase;
+				a {color:$main-color;}
+				h1 {margin-top:-.55em; font-size:2.5em; color:white;}
+
+			}
+
+		}	
+	}
+	#syllabus {
+		float:right;
+		padding:.1em 2em 0em 0em;
+		a { color:$callout-color; float:right; text-transform:uppercase; font-size:.75em; @include sans-font; right:0;}
+	}
+	
+	header {
+		top:0;
+		height:4.5em;
+		background-image:url('../../images/subtle_surface.png');
+		/*background-color:$gray-color;*/
+		opacity:0.95;
+		filter:alpha(opacity=95);
+		position:fixed;
+		width:100%;
+		box-shadow: 0px 0px 5px #666;
+	}
+	
+	footer {
+		height:4.5em;
+		background-image:url('../../images/subtle_surface.png');
+		/*background-color:$gray-color;*/
+		width:100%;
+		p {
+		color:#aaa;
+		float:right;
+		font-size:.8em;
+		padding: 4em 2em 0 0;
+		}
+
+	}
+	
+	section {
+		padding:6em 6em 6em 6em;
+
+	}
+	
+	#material {background-color:#F8F8F8;}
+	#follow {background-image:url('../../images/subtle_dots.png');}
+	#resources {background-color:#F8F8F8;}
+	#help {background-color:#fff;}
+}
+
