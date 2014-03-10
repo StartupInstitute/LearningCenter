@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 ROCKS!</title>
+	<meta name="viewport" content="width=1024">
+	
+		<!-- Replace path with correct path to deck.core.css. -->
+		<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+
+		<!-- Core and extension CSS files -->
+		<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+		<link rel="stylesheet" href="src/css/prettify.css">
+		<link rel="stylesheet" href="src/css/deck.coder.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+
+		<!-- Theme -->
+		<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+		<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+		<link rel="stylesheet" href="src/codemirror/theme/default.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+		<!-- Replace path with correct path to Modernizr file. -->
+
+		<script src='src/jquery.min.js'></script>
+		<script src="src/modernizr.js"></script>
+	</head>
+	<body class="deck-container">
+		<script type='text/coderdeck' id='coderdeck-default'>
+		  <html>
+		    <head>
+		      <script src='src/jquery.min.js'>SCRIPTEND
+		    </head>
+		    <body>
+			    CODE
+		    </body>
+		</html>
+		</script>
+
+		<script type='text/coderdeck' id='coderdeck-plain'>
+			<html>
+				<title>test</title>
+				<link rel="stylesheet" href="reset.css">
+				<body>
+					CODE
+				</body>
+			</html>
+		</script>
+
+		<script type='text/coderdeck' id='coderdeck-css-playground'>
+			<html>
+				<title>test</title>
+					CODE
+				<body>
+					<h1>I'm a H1 heading</h1>
+					<h2>I'm a H2 heading</h2>
+					<p>Pargraph of text &lt;p&gt;</p>
+					<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+					<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+				</body>
+			</html>
+		</script>
+
+
+		<script type='text/coderdeck' id='coderdeck-style-example'>
+			<html>
+				<title>test</title>
+				<style>
+					CODE
+				</style>
+				<body>
+					<h1>I'm a H1 heading</h1>
+					<h2>I'm a H2 heading</h2>
+					<h3>Pargraph of text &lt;p&gt; here</p>
+					<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+					<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+				</body>
+			</html>
+		</script> 	
+
+
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+<h1>RampUp - Set Up Your Environment</h1>
+<p>Use your left/right arrows to navigate</p>
+</article>
+	
+<article class='slide slide-list'>
+<h1>Today, you will...</h1>
+	<ol>
+		<li class="slide">
+			<h3>Set up your Domain</h3>
+		</li>
+		<li class="slide">
+			<h3>Setup your dev environment</h3>
+		</li>
+	</ol>
+</article>
+
+</article>
+<article class='slide slide-accent'>
+	<h1>Set up your Domain</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Set up your Domain</h1>
+	<ul>
+		<li class="slide">
+			<h3>Consider using your name or initials</h3>
+		</li>
+		<li class="slide">
+			<h3>It should be easy to remember</h3>
+		</li>
+		<li class="slide">
+			<h3>This will be your personal landing page</h3>
+		</li>
+		<li class="slide">
+			<h3><a href="http://www.seomoz.org/learn-seo/domain">SEO Moz Domain Name Info</a></h3>
+		</li>
+		<li class="slide">
+			<h3>Use <a href="http://www.Domain.com">Domain.com</a> or <a href="http://www.register.com">Register.com</a></h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h1>Point Your Domain to Github</h1>
+	<ul>
+		<li class="slide">
+			<h3>Now you need to "point" your domain to github, so it can show the world your page</h3>
+		</li>
+		<li class="slide">
+			<h3>Change the "A-Record" point to the following Ip Address: 204.232.175.78</h3>
+		</li>
+		<li class="slide">
+			<h3>Test your account by seeing if you get a 404 error from github</h3>
+		</li>
+		<li class="slide">
+			<h3>Check out this <a href="https://help.github.com/articles/my-custom-domain-isn-t-working">Guide </a>from github if you are having trouble</h3>
+		</li>
+		<li class="slide">
+			<h3>Every domain provider has a different way of doing this - search your provider to find out how to change a record.</h3>
+		</li>
+		<li class="slide">
+			<h3>It may take a day for these changes to be implemented - That's OK. Keep moving forward</h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Lists</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Types of Lists</h1>
+	<ol>
+		<li class="slide">
+			<h3>Ordered Lists</h3>
+		</li>
+		<li class="slide">
+			<h3>Unordered Lists</h3>
+		</li>
+		<li class="slide">
+			<h3>Definition Lists</h3>
+		</li>
+	</ol>
+</article>
+
+
+<article class='slide slide-list'>
+<h1>Ordered Lists</h1>
+	<h3>Also known as numbered lists, each item in the list is numbered. </h3>
+	<ol>
+		<li>start with the <em>&lt; ol &gt;</em> tag </li> 
+		<li>end with the <em>&lt; /ol &gt;</em> tag </li>
+		<li>each item is wrapped in <em>&lt; li &gt;</em> and <em>&lt; /li &gt;</em> tags </li>
+	</ol></br>
+</article>
+
+<article class='slide slide-list'>	
+	<h2>Example Ordered List</h2>
+	<pre>	
+ &lt;ol&gt;
+	&lt;li&gt;List item 1&lt;/li&gt;
+	&lt;li&gt;List item 2&lt;/li&gt;
+	&lt;li&gt;List item 3&lt;/li&gt;
+ &lt;/ol&gt; 
+	</pre>
+</article>
+
+<article class='slide slide-list'>
+<h1>Unordered Lists</h1>
+	<h3>Also known as bulleted lists, each item in the list has a bullet. </h3>
+	<ol>
+		<li>start with the <em>&lt; ul &gt;</em> tag </li> 
+		<li>end with the <em>&lt; /ul &gt;</em> tag </li>
+		<li>each item is wrapped in <em>&lt; li &gt;</em> and <em>&lt; /li &gt;</em> tags </li>
+	</ol></br>
+</article>
+
+<article class='slide slide-list'>	
+	<h2>Example Unordered List</h2>
+	<pre>	
+ &lt;ul&gt;
+	&lt;li&gt;bullet item 1&lt;/li&gt;
+	&lt;li&gt;bullet item 2&lt;/li&gt;
+	&lt;li&gt;bullet item 3&lt;/li&gt;
+ &lt;/ul&gt; 
+	</pre>
+</article>
+
+<article class='slide slide-list'>
+<h1>Nested Lists</h1>
+	<h3>Lists inside of lists! <br/>
+	You can start a second list inside your first list </h3>
+	<ol>
+		<li>start in your <em>&lt; li &gt;</em> tag </li> 
+		<li>start a new <em>&lt; ul &gt;</em> before closing the <em>&lt; li &gt;</em> </li>
+		<li>add your nested list remembering to close the initial <em>&lt; /ul &gt;</em> tag at the VERY end </li>		
+	</ol></br>
+</article>
+
+<article class='slide slide-list'>	
+	<h2>Example Nested List</h2>
+	<pre>	
+&lt;ul&gt;
+  &lt;li&gt;bullet item 1&lt;/li&gt;
+  &lt;li&gt;bullet item 2
+    &lt;ul&gt;
+      &lt;li&gt;nested item 1&lt;/li&gt;
+      &lt;li&gt;nested item 2&lt;/li&gt;
+    &lt;/ul&gt;	
+  &lt;/li&gt;
+  &lt;li&gt;bullet item 3&lt;/li&gt;
+&lt;/ul&gt; 
+	</pre>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Let's make some lists</h2>
+<p>Add a list inside the current list of where on the interwebs to post your images <br/> Add some bullets after the list of fun Meme Ideas</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant'>
+<h1>Step to starting a Meme</h1>
+<ol>
+  <li>Find cute animal picture</li>
+  <li>Add a snarky message</li>
+  <li>Post to interwebs</li>
+</ol>
+    
+</textarea>
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>Links</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Links are why the Web is so awesome!</h1>
+	<h3>they are what makes surfing possible (no wetsuit required) </h3>
+	<ol>
+		<li>link from one website to another </li> 
+		<li>link from one page in your site to another</li>
+		<li>link from a specific part of a page to another</li>
+		<li>open a new window with a link</li>
+		<li>send an email with a link</li>
+	</ol></br>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Link Tags</h1>
+	<p class="slide">Always an open and close<br/></p>
+		<div class="slide example"><em> &lt;a&gt;</em> &nbsp; <em> &lt;/a&gt;</em></div>
+	<p class="slide">This is the base of how we link to anything - what we add between those two tags is what we will link to. Remember you close your links!
+	</p>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Add HREF</h1>
+	<h3>We tell the browser where to link by adding</h3>
+	<div class="slide example"><em>href = "..."</em></div>
+	<h3>Example</h3>
+	<h3>&lt;a &nbsp;href&nbsp; = "&nbsp;<em>http://www.website.com</em>&nbsp;"&gt;<em>This is your Link </em>&lt;a&gt;</h3>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Link to Other Sites</h2>
+	<h3>We need to use an absolute url (don't forget the http or https-copy and paste from your browser to be sure)</h3><br/>
+	<pre class='prettyprint'>&lt;a href="http://www.website.com"&gt;This is your Link&lt;a&gt;</pre>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Open a Link in a New Window</h2>
+	<h3>we add an attribute inside the a tag of  <em>target="_blank"</em></h3><br/>
+		<h3>Generally we don't want to open links in new windows <br/>(let the user decide if they want to do this)</h3><br/>
+			<pre class='prettyprint'> &lt;a href="about.com" target="about.com"&gt; About Page &lt;a&gt;	
+			</pre>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Link to a page in your site</h2>
+	<h3>We need to tell the browser what .html document to link to/open</h3><br/>
+		<h3>If all the pages (.html files) are in the same folder you can just use the name of the file</h3><br/>
+	<pre class='prettyprint'>&lt;a href= "about.com"&gt;About Page&lt;a&gt;</pre>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Typical Folder Structure</h2>
+		<img src="images/folder.png" class='top-image'/>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Directory Relationships</h2>
+	<h3>If it's in the same folder<br/>
+	<em>= "contact.html"</em></h3><br/>
+	<h3>If it's inside another folder inside your folder<br/>
+	<em>= "images/logo.png"</em></h3><br/>
+	<h3>If it's outside the folder you are in (if we were inside the images folder and wanted to link to index.html)<br/>
+	<em>= "../index.html"</em></h3><br/>
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>Anchors</h1>
+	<h3>how we link to specific part of a page</h3>
+</article>
+
+<article class='slide slide-list'>
+<h2>How anchors work</h2>
+	<h3>They use the <em>id</em> attribute- great for 1-page scrolling sites</h3>
+	<ul>
+		<li><h3>decide where on the page you want to link</h3></li>
+		<li><h3>add the <em>id=".."</em> attribute inside the opening tag</h3></li> 		
+		<li><h3>the attribute name should start with a letter or _ and be relevant to the text</h3></li>
+		<li><h3>can't reuse attribute names (ids only get used) </h3></li>
+		<li><h3>in the nav link to the anchor text using <em>href="#id-name"</em></h3></li>
+	</ul>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Anchor Your Navs</h2>
+<p>without hitting solution - try anchoring your navs<br/>
+	bonus- add a <em>back to top</em> link at the bottom of each section</p>
+<textarea class='coder-editor coder-editor-full' data-save='anchor-playground'>
+<header>
+	<h1>MY PAGE</h1>
+	<nav>
+	  <ul>  
+	    <li><a>Home</a></li>  
+	    <li><a>About</a></li>  
+	    <li><a>Portfolio</a></li>
+	    <li><a>Contact</a></li>  
+	 </ul>
+	</nav>
+</header>
+<section>
+	<h1>About</h1>
+	<p>	Brisket chuck leberkas short ribs tenderloin tongue. <br/>Filet mignon sirloin jerky chicken strip steak t-bone. Ribeye short ribs fatback pancetta ham boudin, pork biltong tenderloin leberkas ball <br/>tip pork chop bresaola. Spare ribs kielbasa pork loin hamburger pork chop rump beef. Chuck spare ribs pork chop shank ribeye, leberkas turkey <br/>pig. Tri-tip tongue turducken, pig jowl brisket tail tenderloin flank rump bresaola pork chop short loin shoulder.</p>
+
+	<h1>Portfolio</h1>
+	<p>T-bone strip steak beef ribs, tenderloin drumstick pancetta biltong <br/>sirloin jowl speck kielbasa ball tip. Filet mignon leberkas jerky, cow shankle spare ribs fatback venison tri-tip short ribs kielbasa brisket. <br/>Swine pork loin beef kielbasa, prosciutto boudin beef ribs hamburger pork chop short ribs meatloaf frankfurter bresaola. Chuck kielbasa tail boudin.</p>	
+	
+	<p>Ball tip swine salami, strip steak boudin chicken fatback. Kielbasa bresaola <br/>ribeye swine speck pork belly. T-bone chuck turducken, tail pig ball tip kielbasa. Ribeye kielbasa tenderloin spare ribs, turducken beef ribs<br/> prosciutto drumstick brisket pastrami strip steak. Jerky salami biltong chicken, ground round pig pork chop meatball pork corned beef pastrami turducken shoulder.</p>
+
+	<h1>Contact</h1>
+	<p>Ball tip capicola chuck kielbasa prosciutto chicken. <br/>Meatloaf meatball corned beef pork belly, andouille frankfurter salami ground round biltong rump spare ribs. Capicola tail boudin, turducken <br/>pork belly ribeye bresaola bacon t-bone ball tip. Ribeye frankfurter spare ribs, ground round pork loin tail rump salami speck sirloin pastrami shank.</p>
+
+		<p>Ham hamburger capicola short loin pork loin kielbasa. Meatball biltong tri-tip pork belly speck pork loin, shankle bacon. Bacon frankfurter prosciutto, ribeye tri-tip jowl beef pork chop kielbasa bresaola t-bone pig shank short loin. Jerky brisket pork chop jowl.</p>
+</section>	
+
+
+
+
+
+
+
+
+
+<!---DON'T TYPE BELOW THIS LINE- these are styles you don't need to worry about yet -->
+
+<style>
+  section {width:50%; line-height:1.5em; margin-bottom:1000px;}
+  h1 {margin-top:50px;}
+
+</style>
+
+</textarea>
+<script type='coder-solution'>
+<header>
+	<h1>MY PAGE</h1>
+	<nav>
+	  <ul>  
+	    <li><a href="#home">Home</a></li>  
+	    <li><a href="#about">About</a></li>  
+	    <li><a href="#portfolio">Portfolio</a></li>
+	    <li><a href="#contact">Contact</a></li>  
+	 </ul>
+	</nav>
+</header>
+<section>
+	<h1 id="home">Bacon Ipsum</h1>
+	<p>	Brisket chuck leberkas short ribs tenderloin tongue. Filet mignon sirloin jerky chicken strip steak t-bone. Ribeye short ribs fatback pancetta ham boudin, pork biltong tenderloin leberkas ball tip pork chop bresaola. Spare ribs kielbasa pork loin hamburger pork chop rump beef. Chuck spare ribs pork chop shank ribeye, leberkas turkey pig. Tri-tip tongue turducken, pig jowl brisket tail tenderloin flank rump bresaola pork chop short loin shoulder.</p>
+	<h1 id="about">About</h1>
+	<p>T-bone strip steak beef ribs, tenderloin drumstick pancetta biltong sirloin jowl speck kielbasa ball tip. Filet mignon leberkas jerky, cow shankle spare ribs fatback venison tri-tip short ribs kielbasa brisket. Swine pork loin beef kielbasa, prosciutto boudin beef ribs hamburger pork chop short ribs meatloaf frankfurter bresaola. Chuck kielbasa tail boudin.</p>	
+	<h1 id="portfolio">Portfolio</h1>	
+	<p>Ball tip swine salami, strip steak boudin chicken fatback. Kielbasa bresaola ribeye swine speck pork belly. T-bone chuck turducken, tail pig ball tip kielbasa. Ribeye kielbasa tenderloin spare ribs, turducken beef ribs prosciutto drumstick brisket pastrami strip steak. Jerky salami biltong chicken, ground round pig pork chop meatball pork corned beef pastrami turducken shoulder.</p>
+
+		<p>Ball tip capicola chuck kielbasa prosciutto chicken. Meatloaf meatball corned beef pork belly, andouille frankfurter salami ground round biltong rump spare ribs. Capicola tail boudin, turducken pork belly ribeye bresaola bacon t-bone ball tip. Ribeye frankfurter spare ribs, ground round pork loin tail rump salami speck sirloin pastrami shank.</p>
+	<h1 id="contact">Contact</h1>
+		<p>Ham hamburger capicola short loin pork loin kielbasa. Meatball biltong tri-tip pork belly speck pork loin, shankle bacon. Bacon frankfurter prosciutto, ribeye tri-tip jowl beef pork chop kielbasa bresaola t-bone pig shank short loin. Jerky brisket pork chop jowl.</p>
+</section>	
+
+
+
+
+
+
+
+
+
+
+<!---DON'T TYPE BELOW THIS LINE- these are styles you don't need to worry about yet -->
+
+<style>
+  section {width:50%; line-height:1.5em; margin-bottom:1000px;}
+  h1 {margin-top:50px;}
+
+</style>
+</script>
+
+</article>
+
+
+
+
+<article class='slide slide-accent'>
+	<h1>Images</h1>
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>Getting images into your site</h1>
+</article>
+
+
+<article class='slide slide-list'>
+	<h1>The Image Tag</h1>
+	<h3>images are defined with the <em>&lt; img &gt;</em></span> tag.</h3></br>
+		<div class="example">&lt;<em>img</em>&nbsp;<em>src</em>&nbsp; = "&nbsp;<em>file location</em>&nbsp;"/&gt;</div>
+	<h3>images have no closing tag.</br> The <em>/</em> is located at the end of the tag</h3>
+</article>	
+
+<article class='slide slide-list'>
+	<h1>The Alt Attribute</h1>
+	<h3>The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.</h3>
+	<div class="example">&lt;img &nbsp;src="lama.png"&nbsp;<b>alt="big llama"&gt;</b></div><br/>
+	<p class="callout">You decide what the description text is.</br> The alt attribute is required for your code to validate.
+	</p>
+</article>
+
+<article class='slide slide-list'>
+<h2>Let's Link Some Images!!</h2>
+<p>link to all these images, cat.jpg (in a folder called images), llama.jpg (in the same folder as the html), otter.jpg (in the images folder in a folder called small), try to find owl.jpg and bunny.jpg</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='image-playground'>
+</textarea>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Special Characters</h1>
+</article>
+	
+<article class='slide slide-subhead'>
+	<h1>Special Characters</h1>
+	<h3>Have you ever tried to type ampersands, copyright symbols, quotation marks, greater-than, or less-than signs into your code as text?</h3>
+	<h3><div class="example"><em> &nbsp; &amp; &nbsp;  &copy; &nbsp;  &ldquo; &nbsp;  &rdquo; &nbsp;  &hearts; &nbsp; &lt; &nbsp;  &gt;  &nbsp; </em></div></h3>
+	<h3>There are some characters that are used in HTML that you can't just type in, the browser will think it's code and not text to be displayed.</h3> 	
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1>Google is our friend</h1>
+<h3><a href='http://www.webmonkey.com/2010/02/special_characters/'>http://www.webmonkey.com/2010/02/special_characters/</a></h3>
+<h3><a href='http://www.w3schools.com/tags/ref_entities.asp'>http://www.w3schools.com/tags/ref_entities.asp</a></h3>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Make my Characters Work</h2>	
+<p>Look up and try adding some fun characters to your text</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='F012-characters'>
+</textarea>
+</article>	
+
+
+
+<article class='slide slide-accent'>
+	<h1>You are Excellent!<br/>On to Your Lab!</h1>
+</article>
+
+
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
